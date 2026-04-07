@@ -1,0 +1,565 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    cursor: default;
+}
+
+p{
+    font-size: 13pt;
+    text-align: justify;
+    margin: 50px 15%;
+    line-height: 1.7;
+    letter-spacing: 0.9px;
+    cursor: default;
+}
+
+h1::after{
+    content: " ✱";
+    font-size: 50pt;
+}
+
+h1::before{
+    content: "✱ ";
+    font-size: 50pt;
+}
+
+.cabecalho{
+    background:linear-gradient(135deg, #111C5A, #A599BD, #F29EBD);
+    height: 550px;
+    padding-top: 1px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 8px 80px #01073e2f;
+    border-bottom-right-radius: 80px;
+}
+
+.cabecalho nav{
+    padding: 7px 10px 7px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #0b1a5531;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.cabecalho nav ul{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+
+.cabecalho nav ul li a{
+    margin-right: 35px;
+    color: white;
+    font-weight: bold;
+    font-size: 10pt;
+    text-decoration: none;
+}
+
+.cabecalho nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.cabecalho h1{
+    margin: 190px 0 5px 0;
+    font-size: 65pt;
+}
+
+.cabecalho h2{
+    margin-top: 0;
+    font-size: 15pt;
+    letter-spacing: 2px;
+}
+
+#introducao h4, #conclusao h4{
+    color: white;
+    background-color: #FB9EBB;
+    border-radius: 25px;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin: 80px 0px 10px 90px
+}
+
+#introducao h3, #conclusao h3{
+    margin: 10px 0px 10px 90px;
+    font-size: 30pt;
+    color: #0B1A55;
+}
+
+.destaque{
+    font-style: italic;
+    font-family: "DM Serif Display", Arial, Helvetica, Sans-serif;
+    color:#E77C9A;
+    margin-left:2px;
+}
+
+#tecnologia, #nanotecnologia, #fontes{
+    background-color: #0B1A55;
+    color: rgba(255, 255, 255, 0.66);
+    padding: 80px 0px;
+    margin-top: 100px  
+}
+
+#tecnologia h4, #nanotecnologia h4{
+    color: #0B1A55;
+    background-color: #FB9EBB;
+    border-radius: 25px;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin: 0px 0px 10px 90px
+}
+
+#tecnologia h3, #nanotecnologia h3, #fontes h3{
+    margin: 10px 0px 10px 90px;
+    font-size: 30pt;
+    color: white;
+}
+
+hr{
+    width: 90%;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.193);
+    margin: 100px auto;
+}
+
+.sessaoImagens{
+    display: flex;
+    justify-content:space-between;
+    margin: 0px 8%;
+    margin-bottom: 110px
+}
+
+.sessaoImagens h5{
+    font-size: 14pt;
+    color: #FB9EBB;
+    letter-spacing: 5px;
+    margin: 0px 0px 5px 106px;
+}
+
+#tecnologia #conteudoSessao1 h4{
+    color: white;
+    background: none;
+    font-size: 31pt;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 30px
+}
+
+.sessaoImagens #conteudoSessao1 p{
+    margin: 0px 95px 0px 100px;
+    text-align: left;
+}
+
+#tecnologia #conteudoSessao2 h4{
+    color: white;
+    background: none;
+    font-size: 31pt;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+
+.sessaoImagens #conteudoSessao2 p{
+    margin: 0px 95px 0px 107px;
+    text-align: left;
+}
+
+#img1{
+    margin: 30px 20px 0px 90px;
+    width: 470px;
+    height: 420px;
+}
+
+#img2{
+    margin: 70px 20px 0px 20px;
+    width:380px;
+    height: 380px;
+}
+
+.prosECons{
+    display: flex;
+    justify-content: space-between;
+    margin:  0px 15%;
+    margin-bottom: 45px;
+}
+
+.pros h5, .cons h5{
+    font-size: 14pt;
+    letter-spacing: 5px;
+    margin-bottom: 70px;
+}
+
+.pros{
+    color:aquamarine;
+}
+.cons{
+    color: #E77C9A;
+}
+.pros ul li, .cons ul li{
+    font-size: 13pt;
+    line-height: 1.7;
+    letter-spacing: 0.9px;
+}
+.pros hr, .cons hr{
+    margin: 45px auto;
+}
+
+#tecnologiaMulheres h3{
+    margin-left: 225px;
+}
+
+#mulheres h4{
+    color: white;
+    background-color: #FB9EBB;
+    border-radius: 25px;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin: 80px 0px 10px 90px
+}
+
+#mulheres h3{
+    margin: 10px 0px 10px 90px;
+    font-size: 30pt;
+    color: #0B1A55;
+}
+
+ #mulheres #enfeitado{
+    margin: 10px 0px 0px 228px;
+    font-size: 25pt;
+    color: #0B1A55;
+}
+
+#enfeitado::before{
+    content: "✦ "
+}
+
+#mulheres{
+    margin-bottom: 90px;
+}
+
+#mulheres p{
+    margin-top: 20px
+}
+
+.exemploMulheres1{
+    display: flex;
+    justify-content: space-between;
+    margin: 110px 15%;
+}
+.exemploMulheres2{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 15%;
+}
+.col1, .col4{
+    background-color: hsla(341, 92%, 80%, 0.753);
+    box-shadow:2px 4px 8px rgba(135, 135, 135, 0.193)
+}
+
+.col2{
+    background-color: hsla(342, 77%, 75%, 0.753);
+    box-shadow:2px 4px 8px rgba(135, 135, 135, 0.193)
+}
+
+.col3, .col5{
+    background-color: hsla(343, 69%, 70%, 0.753);
+    box-shadow:2px 4px 8px rgba(135, 135, 135, 0.193)
+}
+
+.col1, .col2, .col3{
+    width: 345px;
+    height: 470px;
+    border-radius: 25px;
+    color: white;
+    position: relative;
+}
+
+.col4, .col5{
+    width: 525px;
+    height: 335px;
+    border-radius: 25px;
+    color: white;
+    position: relative;
+}
+
+.avatar {
+  position: absolute;
+  top: -60px; 
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom:10px ;
+  
+  width: 110px;
+  height: 110px;
+  border-radius: 55%;
+  overflow: hidden;
+
+  border: 4px solid #FFDBD1; 
+  background: white;
+}
+
+.col1 p, .col2 p, .col3 p, .col4 p, .col5 p{
+    font-size: 11pt;
+    max-width: 350px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.col1 h5, .col2 h5, .col3 h5, .col4 h5, .col5 h5{
+    font-size: 18pt;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 80px
+}
+
+#nanotecnologia{
+    background-color:#0B1A55;
+}
+#nanotecnologia p{
+    margin-bottom: 70px;
+}
+
+.timeline{
+    border-left: solid 3px #FB9EBB;
+    margin: 10px 17%; 
+    padding-top: 35px;
+    padding-bottom: 1px;
+}
+
+#nanotecnologia .nanotechTopicos h4{
+    font-size: 20pt;
+    background: none;
+    width: 100%;
+    text-align: left;
+    color: white;
+    margin: 3px 0px 10px 45px
+}
+
+#nanotecnologia .nanotechTopicos h5{
+    font-size: 10pt;
+    color: #FB9EBB;
+    letter-spacing: 5px;
+    margin: 0px 0px 0px 50px;
+}
+
+#nanotecnologia .nanotechTopicos p{
+    padding: 10px 30px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+#nanotecnologia .nanotechPEC{
+    margin-bottom: 90px;
+}
+
+#nanotecnologia .nanotechPEC h4{
+    color: rgba(255, 255, 255, 0.66);
+    width: 100%;
+    background: none;
+    text-align: left;
+    font-size: 15pt;
+    letter-spacing: 1.1px;
+    font-family: 'Inter', Arial, Hellvetica, Sans-serif;
+    margin: 20px 17%;
+    margin-bottom: 60px;
+}
+
+.nanotechPros, .nanotechCons{
+    display: flex;
+    justify-content: center;
+    margin: 20px 17%;
+}
+
+
+.nanotechPros h5{
+    letter-spacing: 0.9px;
+    background-color:rgba(0, 255, 255, 0.236);
+    border: solid 1px aqua;
+    border-radius: 25px;
+    padding: 10px 30px;
+    width: fit-content; 
+    white-space: nowrap; 
+    color: aqua;
+    text-align: center;
+    height: 20px;
+    font-size: 11pt;
+    font-family: 'Inter', Arial, Hellvetica, Sans-serif;
+    margin: 40px 0px 40px 60px;
+}
+
+.nanotechCons h5{
+    letter-spacing: 0.9px;
+    background-color:rgba(231, 124, 154, 0.236);
+    border: solid 1px #E77C9A;
+    border-radius: 25px;
+    padding: 10px 30px;
+    width: fit-content; 
+    white-space: nowrap; 
+    color: #E77C9A;
+    text-align: center;
+    height: 20px;
+    font-size: 11pt;
+    font-family: 'Inter', Arial, Hellvetica, Sans-serif;
+    margin: 56px 0px 56px 60px;
+}
+
+.nanotechP{
+    margin-left: 50px
+}
+
+.nanotechP .whiteP{
+    color: white;
+    font-size: 14pt; 
+    margin-bottom: 1px;
+}
+
+#nanotecnologia .nanotechPEC .nanotechPros .nanotechP p{
+    width: 100%;
+    margin: 10px; 
+    margin-left: 50px;
+    max-width: 645px
+}
+
+#nanotecnologia .nanotechPEC .nanotechCons .nanotechP p{
+    width: 100%;
+    margin: 10px; 
+    margin-left: 50px;
+    max-width: 645px
+}
+
+#nanotecnologia .nanotechPEC hr{
+    margin: 70px 15%;
+    width: 70%;
+}
+
+#conclusao{
+    background-color:rgb(255, 242, 237);
+    padding: 1px;
+    margin-bottom: 1px;
+}
+
+#conclusao .frase1, #conclusao .frase2{
+    font-family: "DM Serif Display", Arial, Helvetica, Sans-serif;
+    font-size: 30pt;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    color: rgba(0, 21, 34, 0.788);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.frase1{
+    margin: 120px 17% 5px;
+}
+
+.frase2{
+    margin: 1px 17% 20px;
+}
+
+.frase1::before {
+    content: "“"; 
+    color: #FA9EBC;
+    font-size: 35pt;
+    margin-right: 5px;
+}
+
+.frase2::after{
+    content: "”"; 
+    color: #FA9EBC;
+    font-size: 35pt;
+    margin-left: 3px;
+}
+
+#conclusao #autora{
+    color:#E77C9A;
+    letter-spacing: 0.9px;
+    display: flex;
+    justify-content: right;
+    margin: 20px 17% 200px;
+}
+
+#fontes{
+    border-top-right-radius: 80px;
+    border-top-left-radius: 80px;
+    margin-top: -80px;
+    padding-bottom:  40px;
+}
+
+#fontes .lista{
+    margin: 50px 90px;
+    color: white;
+}
+
+#fontes .lista .item{
+    margin: 3px 0px;
+    font-size: 17pt;
+    font-weight: bold;
+}
+
+#fontes .lista #item1::before{
+    content:"01. ";
+    color: rgba(255, 255, 255, 0.66);
+    margin: 40px 70px 0px 0px;
+    font-size: 14pt;
+}
+
+#fontes .lista #item2::before{
+    content:"02. ";
+    color: rgba(255, 255, 255, 0.66);
+    margin: 40px 66px 0px 0px;
+    font-size: 14pt;
+}
+
+#fontes .lista #item3::before{
+    content:"03. ";
+    color: rgba(255, 255, 255, 0.66);
+    margin: 40px 70px 0px 0px;
+    font-size: 14pt;
+}
+
+#fontes .lista #item4::before{
+    content:"04. ";
+    color: rgba(255, 255, 255, 0.66);
+    margin: 40px 70px 0px 0px;
+    font-size: 14pt;
+}
+
+#fontes .lista #item5::before{
+    content:"05. ";
+    color: rgba(255, 255, 255, 0.66);
+    margin: 40px 70px 0px 0px;
+    font-size: 14pt;
+}
+
+#fontes a{
+    margin: -10px 102px;
+    font-size: 12pt;
+    text-decoration: none;
+    color:#A599BD
+}
+
+#fontes a:hover{
+    text-decoration: underline;
+}
+
+#fontes hr{
+    margin: 50px;
+}
