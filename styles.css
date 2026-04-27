@@ -23,14 +23,17 @@ p{
 }
 
 h1::after{
-    content: " ✱";
+    content: "✦ ";
     font-size: 50pt;
+    margin-left: 25px
 }
 
 h1::before{
-    content: "✱ ";
+    content: " ✦";
     font-size: 50pt;
+    margin-right: 25px
 }
+
 
 .cabecalho{
     background:linear-gradient(135deg, #111C5A, #A599BD, #F29EBD);
@@ -83,14 +86,16 @@ h1::before{
     letter-spacing: 2px;
 }
 
-#introducao h4, #conclusao h4{
+#introducao h4, #conclusao h4, #mulheres h4{
     color: white;
-    background-color: #FB9EBB;
+    background-color: #fcb4cb;
     border-radius: 25px;
-    width: 100px;
+    width: 130px;
     text-align: center;
     padding: 5px;
-    margin: 80px 0px 10px 90px
+    margin: 80px 0px 10px 90px;
+    font-size: 9pt;
+    letter-spacing: 1.1px;
 }
 
 #introducao h3, #conclusao h3{
@@ -117,10 +122,12 @@ h1::before{
     color: #0B1A55;
     background-color: #FB9EBB;
     border-radius: 25px;
-    width: 100px;
+    width: 130px;
     text-align: center;
     padding: 5px;
-    margin: 0px 0px 10px 90px
+    margin: 0px 0px 10px 90px;
+    font-size: 9pt;
+    letter-spacing: 1.1px;
 }
 
 #tecnologia h3, #nanotecnologia h3, #fontes h3{
@@ -223,30 +230,22 @@ hr{
     margin-left: 225px;
 }
 
-#mulheres h4{
-    color: white;
-    background-color: #FB9EBB;
-    border-radius: 25px;
-    width: 100px;
-    text-align: center;
-    padding: 5px;
-    margin: 80px 0px 10px 90px
-}
-
 #mulheres h3{
     margin: 10px 0px 10px 90px;
     font-size: 30pt;
     color: #0B1A55;
 }
 
- #mulheres #enfeitado{
+#mulheres #enfeitado{
     margin: 10px 0px 0px 228px;
     font-size: 25pt;
     color: #0B1A55;
 }
 
 #enfeitado::before{
-    content: "✦ "
+    content: "✦ ";
+    margin-left: 10px;
+    margin-right: 3px;
 }
 
 #mulheres{
@@ -450,7 +449,7 @@ hr{
 }
 
 #conclusao{
-    background-color:rgb(255, 242, 237);
+    background-color:rgb(255, 252, 247);
     padding: 1px;
     margin-bottom: 1px;
 }
@@ -510,7 +509,7 @@ hr{
 
 #fontes .lista .item{
     margin: 3px 0px;
-    font-size: 17pt;
+    font-size: 13pt;
     font-weight: bold;
 }
 
@@ -518,35 +517,35 @@ hr{
     content:"01. ";
     color: rgba(255, 255, 255, 0.66);
     margin: 40px 70px 0px 0px;
-    font-size: 14pt;
+    font-size: 13pt;
 }
 
 #fontes .lista #item2::before{
     content:"02. ";
     color: rgba(255, 255, 255, 0.66);
     margin: 40px 66px 0px 0px;
-    font-size: 14pt;
+    font-size: 13pt;
 }
 
 #fontes .lista #item3::before{
     content:"03. ";
     color: rgba(255, 255, 255, 0.66);
     margin: 40px 70px 0px 0px;
-    font-size: 14pt;
+    font-size: 13pt;
 }
 
 #fontes .lista #item4::before{
     content:"04. ";
     color: rgba(255, 255, 255, 0.66);
     margin: 40px 70px 0px 0px;
-    font-size: 14pt;
+    font-size: 13pt;
 }
 
 #fontes .lista #item5::before{
     content:"05. ";
     color: rgba(255, 255, 255, 0.66);
     margin: 40px 70px 0px 0px;
-    font-size: 14pt;
+    font-size: 13pt;
 }
 
 #fontes a{
