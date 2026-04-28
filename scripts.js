@@ -37,21 +37,10 @@ const pageAccess = new IntersectionObserver((entradas) => {
 
 secoes.forEach(secao => pageAccess.observe(secao))
 
-intro.addEventListener("mousedown", () => intro.classList.add("pressionado"))
-intro.addEventListener("mouseup", () => intro.classList.remove("pressionado"))
+const cbcItens = document.querySelectorAll(".cbc-item")
 
-tecno.addEventListener("mousedown", () => tecno.classList.add("pressionado"))
-tecno.addEventListener("mouseup", () => tecno.classList.remove("pressionado"))
-
-mulher.addEventListener("mousedown", () => mulher.classList.add("pressionado"))
-mulher.addEventListener("mouseup", () => mulher.classList.remove("pressionado"))
-
-nanotec.addEventListener("mousedown", () => nanotec.classList.add("pressionado"))
-nanotec.addEventListener("mouseup", () => nanotec.classList.remove("pressionado"))
-
-conclusao.addEventListener("mousedown", () => conclusao.classList.add("pressionado"))
-conclusao.addEventListener("mouseup", () => conclusao.classList.remove("pressionado"))
-
-fontes.addEventListener("mousedown", () => fontes.classList.add("pressionado"))
-fontes.addEventListener("mouseup", () => fontes.classList.remove("pressionado"))
+cbcItens.forEach(item => {
+    item.addEventListener("mousedown", () => item.classList.add("pressionado"))
+    item.addEventListener("mouseup", () => item.classList.remove("pressionado"))
+})
 
