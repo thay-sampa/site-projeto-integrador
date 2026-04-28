@@ -34,7 +34,6 @@ h1::before{
     margin-right: 25px
 }
 
-
 .cabecalho{
     background:linear-gradient(135deg, #111C5A, #A599BD, #F29EBD);
     height: 550px;
@@ -61,6 +60,12 @@ h1::before{
     display: flex;
     justify-content: right;
     list-style: none;
+}
+
+.cabecalho .ativo a {
+    color: white;
+    text-decoration:underline;
+    font-weight:bold;  
 }
 
 .cabecalho nav ul li a{
@@ -561,4 +566,28 @@ hr{
 
 #fontes hr{
     margin: 50px;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 1.4s, transform 1.4s;
+}
+
+section.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pressionado {
+    transform: scale(0.90);
+    transition: transform 0.1s;
+}
+
+.cbc-item {
+    transition: transform 0.7s;
+}
+
+.cbc-item:hover {
+    transform: scale(1.10);
 }
