@@ -579,11 +579,6 @@ section.visivel {
     transform: translateY(0);
 }
 
-.pressionado {
-    transform: scale(0.90);
-    transition: transform 0.1s;
-}
-
 .cbc-item {
     transition: transform 0.7s;
 }
@@ -591,3 +586,10 @@ section.visivel {
 .cbc-item:hover {
     transform: scale(1.10);
 }
+
+.cbc-item.pressionado {
+    transform: scale(1);
+    transition: transform 0.1s;
+}
+
+
