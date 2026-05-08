@@ -8,7 +8,11 @@ const secoes = document.querySelectorAll("section")
 
 const camera = new IntersectionObserver((secoes) => {
     secoes.forEach(secao => {
-        if (secao.isIntersecting) secao.target.classList.add("visivel")
+        if (secao.isIntersecting) {
+            secao.target.classList.add("visivel")
+        } else {
+            secao.target.classList.remove("visivel")
+        }
     })
 })
 
