@@ -5,18 +5,20 @@ const nanotec = document.querySelector(".nanotec")
 const conclusao = document.querySelector(".conclusao")
 const fontes = document.querySelector(".fontes")
 const secoes = document.querySelectorAll("section")
+const elementosAnimados = document.querySelectorAll(".animarCima, .animarBaixo, .animarDir, .animarEsq")
 
-const camera = new IntersectionObserver((secoes) => {
-    secoes.forEach(secao => {
-        if (secao.isIntersecting) {
-            secao.target.classList.add("visivel")
-        } else {
-            secao.target.classList.remove("visivel")
+const animacao = new IntersectionObserver((entradas) => {
+    entradas.forEach(entrada => {
+        if (entrada.isIntersecting) {
+            entrada.target.classList.add("visivel")
         }
     })
+}, {
+    threshold: 0.1
 })
 
-secoes.forEach(secao => camera.observe(secao))
+secoes.forEach(secao => animacao.observe(secao))
+elementosAnimados.forEach(el => animacao.observe(el))
 
 const pageAccess = new IntersectionObserver((entradas) => {
     entradas.forEach((entrada) => {
@@ -34,7 +36,6 @@ const pageAccess = new IntersectionObserver((entradas) => {
         else if (id === "conclusao") conclusao?.classList.add("ativo")
         else if (id === "fontes") fontes?.classList.add("ativo")
     })
-
 }, {
     threshold: 0.1
 })
@@ -47,4 +48,3 @@ cbcItens.forEach(item => {
     item.addEventListener("mousedown", () => item.classList.add("pressionado"))
     item.addEventListener("mouseup", () => item.classList.remove("pressionado"))
 })
-
