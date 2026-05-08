@@ -554,6 +554,7 @@ hr{
 }
 
 #fontes a{
+    display: block;
     margin: -10px 102px;
     font-size: 12pt;
     text-decoration: none;
@@ -571,33 +572,37 @@ hr{
 .animarCima {
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 1.4s, transform 1.4s;
+    transition: opacity 0.8s, transform 0.8s;
 }
 
 .animarBaixo {
     opacity: 0;
     transform: translateY(-50px);
-    transition: opacity 1.4s, transform 1.4s;
+    transition: opacity 0.8s, transform 0.8s;
 }
 
 .animarDir {
     opacity: 0;
     transform: translateX(-50px);
-    transition: opacity 1.4s, transform 1.4s;
+    transition: opacity 0.8s, transform 0.8s;
 }
 
 .animarEsq {
     opacity: 0;
     transform: translateX(50px);
-    transition: opacity 1.4s, transform 1.4s;
+    transition: opacity 0.8s, transform 0.8s;
 }
 
-section.visivel .animarCima,
-section.visivel .animarBaixo,
-section.visivel .animarDir,
-section.visivel .animarEsq {
+.animarCima.visivel,
+.animarBaixo.visivel,
+.animarDir.visivel,
+.animarEsq.visivel {
     opacity: 1;
     transform: translate(0);
+}
+
+.animarCima, .animarBaixo, .animarDir, .animarEsq {
+    will-change: transform, opacity;
 }
 
 .delay1 { transition-delay: 0.2s; }
